@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    ports:
+      - "15000:5000"
+    volumes:
+      - ./src:/app
+    command: flask run --host=0.0.0.0
+  redis:
+    image: redis
