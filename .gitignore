@@ -1,1 +1,5 @@
+# Python のバイトコードを除外
+__pycache__/
+
+# macOS のシステムファイルを除外
 .DS_Store
